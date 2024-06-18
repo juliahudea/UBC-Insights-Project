@@ -9,8 +9,7 @@ To get started with the Sections Insight project, you'll need to have Node.js an
 
 ### Clone the repository
 
-git clone https://github.students.cs.ubc.ca/CPSC310-2023W-T2/project_team062.git
-cd project_team062
+git clone https://github.com/juliahudea/UBC-Insights-Project.git
 
 ### Install dependencies
 
@@ -18,7 +17,7 @@ yarn install
 
 ## Start the servers
 
-First start the backend server in the project_team062 folder using:
+First start the backend server using:
 
 yarn start
 
