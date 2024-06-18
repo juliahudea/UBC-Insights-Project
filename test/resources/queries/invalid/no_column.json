@@ -1,0 +1,15 @@
+{
+  "title": "no columns ",
+  "input": {
+    "WHERE": {
+      "EQ": {
+          "section_avg": 5
+      }
+    },
+    "OPTIONS": {
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "underscore in id ",
+  "input": {
+    "WHERE": {
+      "OR" : {
+        "EQ": { "sec_tion_pass":  1},
+        "EQ": { "sec_tion_fail":  1}
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "sec_tion_audit"
+      ],
+      "ORDER": "sec_tion_audit"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

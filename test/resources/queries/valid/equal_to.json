@@ -1,0 +1,22 @@
+{
+  "title": "equal to test ",
+  "input": {
+    "WHERE": {
+      "EQ": {
+          "section_avg": 5
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  10},
+    { "section_audit":  11},
+    { "section_audit":  12}
+  ]
+}

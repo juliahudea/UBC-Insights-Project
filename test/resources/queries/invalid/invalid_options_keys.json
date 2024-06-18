@@ -1,0 +1,18 @@
+{
+  "title": "invalid options keys",
+  "input": {
+    "WHERE": {
+      "EQ" : {
+        "section_year": 12
+      }
+    },
+    "OPTIONS": {
+      "ROWS" : [
+        "section_dept"
+      ],
+      "ducks": "section_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

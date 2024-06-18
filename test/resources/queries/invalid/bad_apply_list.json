@@ -1,0 +1,23 @@
+{
+	"title": "Apply List should be list",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_title"
+			],
+			"APPLY": {
+				"maxAverage": {
+					"MAX": "section_avg"
+				}
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

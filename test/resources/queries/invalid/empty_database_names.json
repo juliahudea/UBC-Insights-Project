@@ -1,0 +1,19 @@
+{
+  "title": "empty databases id",
+  "input": {
+    "WHERE": {
+      "EQ" : {
+        "_avg": 12
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "_avg",
+        "_dept"
+      ],
+      "ORDER": "_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

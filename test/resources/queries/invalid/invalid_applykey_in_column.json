@@ -1,0 +1,26 @@
+{
+	"title": "Invalid Apply Key in Column",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title",
+                "overalldoors"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "section_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

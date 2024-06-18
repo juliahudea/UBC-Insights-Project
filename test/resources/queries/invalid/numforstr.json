@@ -1,0 +1,19 @@
+{
+  "title": "number value for string field",
+  "input": {
+    "WHERE": {
+      "IS" : {
+        "section_title": 3
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_dept",
+        "section_fail"
+      ],
+      "ORDER": "section_fail"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

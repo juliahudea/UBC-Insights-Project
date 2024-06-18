@@ -1,0 +1,23 @@
+{
+	"title": "MultiOrder Keys cannot be empty",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_number"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": []
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_number"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

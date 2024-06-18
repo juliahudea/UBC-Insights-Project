@@ -1,0 +1,20 @@
+{
+  "title": "database not present",
+  "input": {
+    "WHERE": {
+      "EQ" : {
+        "doors_avg": "12"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "doors_avg",
+        "doors_dept",
+        "doors_fail"
+      ],
+      "ORDER": "doors_fail"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

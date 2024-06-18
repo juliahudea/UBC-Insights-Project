@@ -1,0 +1,18 @@
+{
+  "title": "less than negative test ",
+  "input": {
+    "WHERE": {
+      "LT": {
+          "section_avg": -15
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": []
+}

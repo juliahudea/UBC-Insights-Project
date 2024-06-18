@@ -1,0 +1,19 @@
+{
+  "title": "mismatching databases",
+  "input": {
+    "WHERE": {
+      "EQ" : {
+        "doors_avg": 12
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "windows_avg",
+        "closet_dept"
+      ],
+      "ORDER": "closet_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

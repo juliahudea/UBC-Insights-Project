@@ -1,0 +1,25 @@
+{
+	"title": "Applykeys cannot be empty",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"": "section_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

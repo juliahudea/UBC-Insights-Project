@@ -1,0 +1,18 @@
+{
+  "title": "invalid filter word",
+  "input": {
+    "WHERE": {
+      "Dont" : {
+        "section_year": 12
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_dept"
+      ],
+      "ORDER": "section_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

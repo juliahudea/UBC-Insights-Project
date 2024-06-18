@@ -1,0 +1,6 @@
+{
+  "title": "wrong input type",
+  "input": "mamadali",
+  "errorExpected": true,
+  "expected": "InsightError"
+}

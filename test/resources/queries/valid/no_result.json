@@ -1,0 +1,18 @@
+{
+  "title": "no result ",
+  "input": {
+    "WHERE": {
+      "IS" : {
+        "section_title": "ghasem"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": []
+}

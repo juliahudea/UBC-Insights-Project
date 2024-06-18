@@ -1,0 +1,24 @@
+{
+	"title": "Group Object is an empty list",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "section_avg",
+						"COUNT": "section_title"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "field non-existent",
+  "input": {
+    "WHERE": {
+      "IS" : {
+        "section_bird": "too large"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_flat",
+        "section_side"
+      ],
+      "ORDER": "section_wide"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

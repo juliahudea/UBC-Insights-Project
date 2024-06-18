@@ -1,0 +1,26 @@
+{
+	"title": "Bad Group Key",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_nuts"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "section_avg",
+						"COUNT": "section_title"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

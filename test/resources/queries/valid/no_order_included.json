@@ -1,0 +1,20 @@
+{
+  "title": "no order ",
+  "input": {
+    "WHERE": {
+      "GT": {
+          "section_avg": 7
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  19},
+    { "section_audit":  20}
+  ]
+}

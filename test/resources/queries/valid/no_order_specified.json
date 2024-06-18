@@ -1,0 +1,22 @@
+{
+  "title": "order all equal ",
+  "input": {
+    "WHERE": {
+      "GT": {
+          "section_avg": 7
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit",
+        "section_title"
+      ],
+      "ORDER": "section_title"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  19, "section_title":"alakbarali"},
+    { "section_audit":  20, "section_title":"alakbarali"}
+  ]
+}

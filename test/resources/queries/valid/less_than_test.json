@@ -1,0 +1,23 @@
+{
+  "title": "less than test ",
+  "input": {
+    "WHERE": {
+      "LT": {
+          "section_avg": 3
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  0},
+    { "section_audit":  0},
+    { "section_audit":  1},
+    { "section_audit":  2}
+  ]
+}

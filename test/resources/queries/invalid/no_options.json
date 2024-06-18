@@ -1,0 +1,12 @@
+{
+  "title": "no options",
+  "input": {
+    "WHERE": {
+      "EQ": {
+          "section_avg": 5
+      }
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

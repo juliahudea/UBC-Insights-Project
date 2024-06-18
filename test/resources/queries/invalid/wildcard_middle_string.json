@@ -1,0 +1,18 @@
+{
+  "title": "wildcard in the middle of string ",
+  "input": {
+    "WHERE": {
+      "IS" : {
+        "section_title": "akb*ar"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "logical test not ",
+  "input": {
+    "WHERE": {
+      "NOT" : {
+        "EQ": { "section_pass":  1}
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  14},
+    { "section_audit":  15},
+    { "section_audit":  16},
+    { "section_audit":  17},
+    { "section_audit":  18},
+    { "section_audit":  19},
+    { "section_audit":  20}
+  ]
+
+}

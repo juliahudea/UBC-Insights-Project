@@ -1,0 +1,41 @@
+{
+  "title": "string include ",
+  "input": {
+    "WHERE": {
+      "IS" : {
+        "section_title": "*akbar*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    { "section_audit":  0},
+    { "section_audit":  0},
+    { "section_audit":  1},
+    { "section_audit":  2},
+    { "section_audit":  3},
+    { "section_audit":  4},
+    { "section_audit":  5},
+    { "section_audit":  6},
+    { "section_audit":  7},
+    { "section_audit":  8},
+    { "section_audit":  9},
+    { "section_audit":  10},
+    { "section_audit":  11},
+    { "section_audit":  12},
+    { "section_audit":  13},
+    { "section_audit":  14},
+    { "section_audit":  15},
+    { "section_audit":  16},
+    { "section_audit":  17},
+    { "section_audit":  18},
+    { "section_audit":  19},
+    { "section_audit":  20}
+  ]
+}

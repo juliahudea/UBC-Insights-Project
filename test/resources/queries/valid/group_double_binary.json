@@ -1,0 +1,58 @@
+{
+	"title": "grouping by Pass and Fail",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+                "section_pass",
+                "section_fail",
+				"maxAverage"
+			],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["maxAverage", "section_pass", "section_fail"]
+            }
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_pass",
+                "section_fail"
+			],
+			"APPLY": [
+				{
+					"maxAverage": {
+						"MAX": "section_avg"
+					}
+				},
+                {
+                    "minAverage": {
+                        "MIN": "section_avg"
+                    }
+                }, 
+                {
+                    "avgAverage": {
+						"AVG": "section_avg"
+					}
+                }, 
+                {
+                    
+                    "sumAverage": {
+                        "SUM": "section_avg"
+                    }
+                },
+                {  
+                    "countAverage": {
+                        "COUNT": "section_avg"
+                    }
+                }
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+        { "section_pass": 1, "section_fail": 1, "maxAverage": 4 },
+        { "section_pass": 1, "section_fail": 0, "maxAverage": 6 },
+        { "section_pass": 0, "section_fail": 1, "maxAverage": 7 },
+        { "section_pass": 0, "section_fail": 0, "maxAverage": 9 }
+      ]
+}

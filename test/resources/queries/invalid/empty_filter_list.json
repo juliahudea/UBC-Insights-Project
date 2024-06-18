@@ -1,0 +1,16 @@
+{
+  "title": "empty filter list ",
+  "input": {
+    "WHERE": {
+      "AND" : []
+    },
+    "OPTIONS": {
+      "COLUMNS" : [
+        "section_audit"
+      ],
+      "ORDER": "section_audit"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

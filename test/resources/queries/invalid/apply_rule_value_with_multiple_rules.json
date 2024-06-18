@@ -1,0 +1,26 @@
+{
+	"title": "Each Apply Rule Should Have Only One Rule",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"section_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "section_avg",
+						"COUNT": "section_title"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}
